@@ -1,9 +1,9 @@
 :root {
     --white: #eef0eb;
-    --dark-blue: #284b63;
-    --light-blue: #3c6e71;
+    --dark-blue: #284b62;
+    --light-blue: #3c6f72;
     --brown: #998650;
-    --purple: #a67f8e;
+    --purple: #a57e8d;
     --margin-left-content: 40px;
 }
 /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
@@ -32,7 +32,7 @@ header {
 
 header h1 {
     font-size: 2.75rem;
-    background-color: var(--light-blue);
+    background-image: linear-gradient(hsl(204, 42%, 27%)0%, hsl(183, 31%, 34%)100%);
     border: 3px solid var(--brown);
     border-radius: 5px;
     margin-left: 15px;
