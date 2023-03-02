@@ -1,0 +1,128 @@
+:root {
+    --white: #eef0eb;
+    --dark-blue: #284b63;
+    --light-blue: #3c6e71;
+    --brown: #998650;
+    --purple: #a67f8e;
+    --margin-left-content: 40px;
+}
+/* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--dark-blue);
+    background-color: var(--white);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.75rem;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-bottom:5px solid var(--brown);
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 2.75rem;
+    margin-left: 15px;
+}
+
+header nav {
+    padding-top: 8px;
+    margin-right: 15px;
+    float: right;
+    font-size: 20px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+section {
+    display: flex;
+    flex: 1 0 100%;
+    margin: 25px;
+}
+
+aside {
+    font-size: 2rem;
+    float: left;
+    border-right: 2px solid var(--dark-blue);
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.5rem;
+    padding-right: 15px;
+    min-width: 175px;
+}
+
+img {
+    border: 3px solid var(--light-blue);
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+ p {
+    margin: 15px;
+}
+
+.about-me {
+    display: flex;
+    margin-left: var(--margin-left-content);
+}
+
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: var(--margin-left-content);
+    width: 100%;
+}
+
+.contact-me {
+    display: flex;
+    margin-left: var(--margin-left-content);
+    justify-content: space-between;
+}
+
+.contact-me li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.contact-me a {
+    text-decoration: underline;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+#profile-picture {
+    border-radius: 50%;
+}
