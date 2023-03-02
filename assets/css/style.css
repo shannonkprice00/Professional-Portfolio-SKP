@@ -54,6 +54,10 @@ nav ul li a {
     font-size: 1.8rem;
 }
 
+nav a:hover {
+    color: var(--purple);
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -105,6 +109,10 @@ img {
     width: 100%;
 }
 
+.my-work img:hover {
+    opacity: 0.3;
+}
+
 .contact-me {
     display: flex;
     margin-left: var(--margin-left-content);
@@ -121,6 +129,10 @@ img {
     text-decoration: underline;
     color: var(--dark-blue);
     font-weight: bold;
+}
+
+.contact-me a:hover {
+    color: var(--purple);
 }
 
 #profile-picture {
