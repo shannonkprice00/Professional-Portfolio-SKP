@@ -32,7 +32,12 @@ header {
 
 header h1 {
     font-size: 2.75rem;
+    background-color: var(--light-blue);
+    border: 3px solid var(--brown);
+    border-radius: 5px;
     margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header nav {
@@ -50,7 +55,7 @@ header nav ul li {
 
 nav ul li a {
     color: var(--white);
-    text-decoration: none;
+    text-decoration:underline var(--brown) 3px;
     font-size: 1.8rem;
 }
 
@@ -84,20 +89,43 @@ h2 {
     min-width: 175px;
 }
 
+h3 {
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
 img {
-    border: 3px solid var(--light-blue);
+    border: 4px solid var(--light-blue);
     margin-bottom: 15px;
     max-width: 100%;
     height: auto;
 }
 
- p {
-    margin: 15px;
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--brown);
+    border-top: 3px solid var(--dark-blue);
 }
 
 .about-me {
     display: flex;
     margin-left: var(--margin-left-content);
+}
+
+.about-me p {
+    margin: 35px;
 }
 
 .my-work {
@@ -111,6 +139,25 @@ img {
 
 .my-work img:hover {
     opacity: 0.3;
+}
+.project {
+    position: relative;
+}
+
+.project-label-large {
+    position: absolute;
+    background-color: var(--purple);
+    border: 4px solid var(--light-blue);
+    margin-top: 38%;
+    z-index: 1;
+}
+
+.project-label {
+    position: absolute;
+    background-color: var(--purple);
+    border: 4px solid var(--light-blue);
+    margin-top: 50%;
+    z-index: 1;
 }
 
 .contact-me {
@@ -137,4 +184,10 @@ img {
 
 #profile-picture {
     border-radius: 50%;
+}
+
+#phone {
+    text-decoration: underline;
+    color: var(--dark-blue);
+    font-weight: bold; 
 }
