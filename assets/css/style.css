@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     line-height: 1.5;
     color: var(--dark-blue);
     background-color: var(--white);
@@ -21,9 +21,9 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
-    font-size: 1.75rem;
     background-color: var(--dark-blue);
     color: var(--white);
     border-bottom:5px solid var(--brown);
@@ -31,7 +31,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.75rem;
+    font-size: 2.75vw;
     background-image: linear-gradient(hsl(204, 42%, 27%)0%, hsl(183, 31%, 34%)100%);
     border: 3px solid var(--brown);
     border-radius: 5px;
@@ -41,10 +41,11 @@ header h1 {
 }
 
 header nav {
-    padding-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
     margin-right: 15px;
     float: right;
-    font-size: 20px;
 }
 
 header nav ul li {
@@ -56,7 +57,7 @@ header nav ul li {
 nav ul li a {
     color: var(--white);
     text-decoration:underline var(--brown) 3px;
-    font-size: 1.8rem;
+    font-size: 2vw;
 }
 
 nav a:hover {
@@ -72,37 +73,28 @@ main {
 section {
     display: flex;
     flex: 1 0 100%;
-    margin: 25px;
-}
+    margin: 25px 0px;
+}   
 
-aside {
-    font-size: 2rem;
-    float: left;
-    border-right: 2px solid var(--dark-blue);
-}
-
-h2 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 2.5rem;
-    padding-right: 15px;
-    min-width: 175px;
-}
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1vw;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 h5 {
     font-size: 1.1rem;
+}
+
+p {
+    margin: 35px;
 }
 
 img {
@@ -119,16 +111,11 @@ footer {
     border-top: 3px solid var(--dark-blue);
 }
 
-.about-me {
-    display: flex;
-    margin-left: var(--margin-left-content);
+.banner {
+    margin: 0;
 }
 
-.about-me p {
-    margin: 35px;
-}
-
-.my-work {
+.about-me, .my-work, .contact-me {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -137,33 +124,13 @@ footer {
     width: 100%;
 }
 
-.my-work img:hover {
-    opacity: 0.3;
-}
-.project {
-    position: relative;
+.about-me {
+    flex-wrap: nowrap;
 }
 
-.project-label-large {
-    position: absolute;
-    background-color: var(--purple);
-    border: 4px solid var(--light-blue);
-    margin-top: 38%;
-    z-index: 1;
-}
-
-.project-label {
-    position: absolute;
-    background-color: var(--purple);
-    border: 4px solid var(--light-blue);
-    margin-top: 50%;
-    z-index: 1;
-}
-
-.contact-me {
-    display: flex;
-    margin-left: var(--margin-left-content);
-    justify-content: space-between;
+.horiseon-image {
+    width: 200%;
+    height: auto;
 }
 
 .contact-me li {
@@ -182,12 +149,216 @@ footer {
     color: var(--purple);
 }
 
+.project {
+    position: relative;
+}
+
+.project img {
+    opacity: 0.5;
+}
+
+.project img:hover {
+    opacity: 100%;
+}
+
+.project-label-large {
+    position: absolute;
+    background-color: var(--purple);
+    border: 4px solid var(--light-blue);
+    margin-top: 38%;
+    z-index: 1;
+}
+
+.project-label {
+    position: absolute;
+    background-color: var(--purple);
+    border: 4px solid var(--light-blue);
+    margin-top: 50%;
+    z-index: 1;
+}
+
 #profile-picture {
     border-radius: 50%;
+    margin: 25px;
+}
+
+#content-heading {
+    width: 25%;
+    font-size: 2.5vw;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 2px solid var(--dark-blue);
+
 }
 
 #phone {
     text-decoration: underline;
     color: var(--dark-blue);
     font-weight: bold; 
+}
+
+/* Moves section headers to the left for tablets or larger */
+@media screen and (min-width: 750px) {
+    #content-heading {
+        float: left;
+    }
+}
+
+/* Tablet Layout (changes layout to accomodate tablet devices) */
+
+@media screen and (max-width: 850px) {
+    header {
+        margin-bottom: 0;
+    }
+    
+    header h1 {
+        font-size: 3.5vw;
+    }
+
+    h3 {
+        font-size: 2vw;
+    }
+
+    h4 {
+        font-size: 1.5vw;
+    }
+
+    h5 {
+        font-size: 1.3;
+    }
+
+    p {
+        font-size: 1.75vw;
+        margin: 0;
+    }
+
+    .about-me {
+        flex-wrap: wrap;
+    }
+
+    .project-label-large {
+        margin-top: 33%;
+    }
+
+    .contact-me ul {
+        margin-top: 4%;
+    }
+
+    .contact-me li {
+        display: inline-block;
+        font-size: 2vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #content-heading {
+        font-size: 3vw;
+    }
+}
+
+/* Smartphones Layout (changes layout to accomodate large cellphones and smaller devices) */
+
+@media screen and (max-width: 425px) {
+    header {
+        padding: 10px;
+        margin: 0;
+    }
+    
+    header h1 {
+        width: 100%;
+        font-size: 4rem;
+        margin: 10px 0 0 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 30px;
+    } 
+
+    nav ul li a {
+        font-size: 3rem;
+    }
+
+    main {
+        margin: 10px;
+    }
+   
+    section {
+    position: relative;
+   }
+
+   h3 {
+    font-size: 2.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+   }
+
+    h4 {
+    font-size: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+   p {
+    font-size: 2.2rem;
+    margin: 5px 35px 5px 35px;
+    text-align: left;
+   }
+   
+    .about-me {
+        margin: 15% 0 0 0;
+        flex-wrap: wrap;
+    }
+    
+    .my-work {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20% 0 0 0;
+    }
+    
+    .smaller-images {
+        width: 75%;
+        height: auto;
+    }
+
+    .project {
+        text-align: center;
+    }
+
+    .project-label-large {
+        margin-top: 23%;
+    }
+
+    .project-label {
+        margin-top: 27%;
+    }
+
+    .contact-me {
+        margin: 25% 0 0 0;
+        font-size: 1.1rem;
+    }
+
+    .contact-me li {
+        display: inline-block;
+        font-size: 2.2rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #content-heading {
+        position: absolute;
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid var(--dark-blue);
+        border-right: none;
+        width: 100%;
+    }
 }
