@@ -182,7 +182,7 @@ footer {
     margin: 25px;
 }
 
-#content-heading {
+#about-me, #my-work, #contact-me {
     width: 25%;
     font-size: 2.5vw;
     text-align: right;
@@ -199,7 +199,7 @@ footer {
 
 /* Moves section headers to the left for tablets or larger */
 @media screen and (min-width: 750px) {
-    #content-heading {
+    #about-me, #my-work, #contact-me {
         float: left;
     }
 }
@@ -251,7 +251,7 @@ footer {
         margin-right: 10px;
     }
 
-    #content-heading {
+    #about-me, #my-work, #contact-me {
         font-size: 3vw;
     }
 }
@@ -351,7 +351,7 @@ footer {
         margin-right: 5px;
     }
 
-    #content-heading {
+    #about-me, #my-work, #contact-me {
         position: absolute;
         text-align: center;
         font-size: 3rem;
