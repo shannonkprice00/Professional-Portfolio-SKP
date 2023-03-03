@@ -25,6 +25,7 @@ header {
     justify-content: space-between;
     padding: 20px;
     background-color: var(--dark-blue);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--white);
     border-bottom:5px solid var(--brown);
     margin-bottom: 35px;
@@ -79,12 +80,14 @@ section {
 
 h3 {
     font-size: 1.5vw;
+    text-decoration: underline;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 h4 {
     font-size: 1vw;
+    font-style: italic;
     padding-left: 5px;
     padding-right: 5px;
 }
