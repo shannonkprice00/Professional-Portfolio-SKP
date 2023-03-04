@@ -36,6 +36,8 @@ Tutorials followed:
 * [How to Center an Image Vertically and Horizontally with CSS](https://www.freecodecamp.org/news/how-to-center-an-image-in-css/)
 * [CSS Opacity/Transparency](https://www.w3schools.com/css/css_image_transparency.asp)
 
+Tutor Assistance: **Armando Osario** (Assisted with speparating stylesheets into multiple files and linking to html file for improved organization)
+
 ## License
 
 MIT License

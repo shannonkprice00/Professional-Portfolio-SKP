@@ -1,0 +1,132 @@
+
+/* Tutor: Armando Osorio suggested separate stylesheets for media queries laying out responsive design for phones/tablets */
+
+/* Smartphones Layout (changes layout to accomodate large cellphones and smaller devices) */
+
+@media screen and (max-width: 425px) {
+    /* Adjusted margin/padding for better alignment */
+    header {
+        padding: 10px;
+        margin: 0;
+    }
+    /* Changed font size and heading width to take up 100% top of page and navlinks wrap underneath */
+    header h1 {
+        width: 100%;
+        font-size: 4rem;
+        margin: 10px 0 0 0;
+    }
+
+    /* Changed display to block to keep items vertically aligned under heading 1 */
+    header nav ul li {
+        display: block;
+        margin: 5px 30px;
+    } 
+    /* Adjusted font size for navlinks */
+    nav ul li a {
+        font-size: 3rem;
+    }
+    /* Adjusted main margin for improved alignment */
+    main {
+        margin: 10px;
+    }
+   
+    /* Section elements positioned as relative to allow for section headings to be positioned absolutely (so they can move from floating left to over each section) */
+    section {
+    position: relative;
+   }
+
+   /* Adjusted font size and alignment for project titles */
+   h3 {
+    font-size: 2.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+   }
+
+   /* Adjusted font size and alignment for project titles */
+    h4 {
+    font-size: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+
+    /* Adjusted font-size in footer */
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    /* Repositioned paragraph text to accomodate smaller screensize */
+   p {
+    font-size: 2.2rem;
+    margin: 5px 35px 5px 35px;
+    text-align: left;
+   }
+   
+   /* Formatted about me section and added flexwrap to allow paragraph to wrap under profile image */
+    .about-me {
+        margin: 15% 0 0 0;
+        flex-wrap: wrap;
+    }
+    
+    /* Adjusted margin to improve alignment */
+    .my-work {
+        margin: 25% 0 0 0;
+    }
+    
+    /* Psuedoelement added to instruct user to select a photo to see my work */
+    #my-work::after {
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        content: "(Select an image to see my work in action!)";
+        color: var(--dark-blue);
+        font-size: 15px;
+        font-style: italic;
+        justify-content: center;
+    }
+
+    /* Adjusted secondary image links to maintain 1 image as larger */
+    .smaller-images {
+        width: 75%;
+        height: auto;
+    }
+
+    /* Aligns secondary image links centered */
+    .project {
+        text-align: center;
+    }
+
+    /* Adjusted margins for project labels */
+    .project-label-large {
+        margin-top: 23%;
+    }
+
+    /* Adjusted margins for project labels */
+    .project-label {
+        margin-top: 27%;
+    }
+
+    /* Adjusted margins and font size */
+    .contact-me {
+        margin: 20% 0 0 0;
+        font-size: 1.1rem;
+    }
+
+     /* Adjusted margins and font size */
+    .contact-me li {
+        font-size: 2rem;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0 5px 0 5px;
+    }
+
+    /* Moves and formats section titles over top of sections and centers them */
+    #about-me, #my-work, #contact-me {
+        position: absolute;
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid var(--dark-blue);
+        border-right: none;
+        width: 100%;
+    }
+}
